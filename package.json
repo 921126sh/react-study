@@ -27,7 +27,7 @@
     "clean-dist": "rm -f -r -d dist",
     "lint": "tslint './src/**/*.ts*' --format stylish --force",
     "start": "yarn run start-dev",
-    "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
+    "start-dev": "webpack-dev-server --config=configs/webpack/dev.js --open",
     "start-prod": "yarn run build && node express.js",
     "test": "jest --watch --coverage --config=configs/jest.json"
   },
@@ -50,7 +50,6 @@
     "jest": "^24.7.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
-    
     "react-hot-loader": "^4.8.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
@@ -64,6 +63,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0"
   }
 }
